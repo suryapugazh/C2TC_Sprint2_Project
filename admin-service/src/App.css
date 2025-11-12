@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", "Roboto", sans-serif;
+  background-color: #fafaf8;
+  color: #2d3436;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.admin-list-container {
+  max-width: 1140px;
+  margin: 40px auto;
+  padding: 36px 24px;
+}
+
+.admin-list-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.no-data {
+  text-align: center;
+  color: #a0a4a8;
+  font-size: 0.95rem;
+  margin-top: 28px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.admin-card {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e7e9ec;
+  padding: 20px;
+  transition: 0.25s ease;
+}
+
+.admin-card:hover {
+  border-color: #7d9d8a;
+  box-shadow: 0 4px 12px rgba(125, 157, 138, 0.12);
+  transform: translateY(-2px);
+}
+
+.admin-details h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #2d3436;
+}
+
+.admin-details p {
+  color: #636e72;
+  font-size: 0.95rem;
+  margin: 6px 0;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.card-buttons button {
+  padding: 9px 18px;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.edit-btn {
+  background: #7d9d8a;
+  color: #fff;
+}
+
+.edit-btn:hover {
+  background: #6b8a78;
+}
+
+.delete-btn {
+  background: #b0b3b5;
+  color: #fff;
+}
+
+.delete-btn:hover {
+  background: #979a9b;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e8e9eb;
+  max-width: 460px;
+  margin: 0 auto 40px;
+  padding: 28px 32px;
+}
+
+.form-container h2 {
+  font-size: 1.5rem;
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 11px 14px;
+  margin: 10px 0 16px;
+  border: 1px solid #dfe1e3;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  background-color: #fafaf8;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.form-container input:focus {
+  border-color: #7d9d8a;
+  background-color: #fff;
+  outline: none;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 14px;
+  border: 1px solid #dfe1e3;
+  border-radius: 7px;
+  background-color: #fafaf8;
+  margin-bottom: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.checkbox-group:hover {
+  border-color: #c8cdd0;
+}
+
+.checkbox-group label {
+  font-size: 0.96rem;
+  color: #2d3436;
+}
+
+.checkbox-group input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #7d9d8a;
+  cursor: pointer;
+}
+
+.form-container button {
+  background-color: #7d9d8a;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 7px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form-container button:hover {
+  background-color: #6b8a78;
+}
+
+@media (max-width: 768px) {
+  .admin-list-container {
+    padding: 28px 16px;
+  }
+
+  .admin-card {
+    padding: 18px;
+  }
+
+  .card-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-buttons button {
+    width: 100%;
+  }
+
+  .form-container {
+    padding: 24px 20px;
+  }
+}
